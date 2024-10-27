@@ -1,0 +1,202 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+
+nav{
+    background-color: white;
+    color:black;
+    width: 100%;
+
+}
+nav .mobile{
+    display: none;
+
+}
+/* Menu styles */
+
+/* striky menu */
+#menu{
+    position: sticky;
+    top: 0;
+}
+  /* end stcky menu */
+
+/* header */
+nav .mobile .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav .logo{
+    min-width: 250px;
+}
+
+nav a{
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    padding: 20px 25px;
+}
+nav a:hover{
+    color: black;
+    background-color: rgb(108, 255, 255);
+}
+
+nav .desktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 30px 20px;
+}
+
+nav .desktop .primario{
+    display: flex;
+}
+
+/* submenu */
+nav .terciario{
+    display:block !important;
+}
+
+nav .terciario .submenu{
+    background-color: white;
+    position: absolute;
+    display: none;
+    right: 0;
+    width: 150px;
+}
+
+nav .terciario:hover .submenu{
+    display: block;
+}
+/* fin submenu */
+
+@media screen and (max-width: 915px) {
+    nav .logo{
+        min-width: 50px;
+    }
+
+    nav .primario{
+        display: none !important;
+    }
+
+    nav .terciario{
+        display:block !important;
+    }
+
+    nav .terciario .submenu{
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        display: none;
+        right: 0;
+        width: 150px;
+    }
+
+    nav .terciario:hover .submenu{
+        display: block;
+    }
+}
+
+
+/* vesrsion movil */
+@media screen and (max-width: 483px ) {
+    nav .desktop{
+        display: none;
+    }
+    nav .mobile .links{
+        display: flex;
+    }
+    nav .mobile{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    nav .mobile .logo{
+        margin-left:1% ;
+    }
+    
+}
+/* fin version mobil */
+
+
+/* productos */
+h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content: space-around;
+        display: flex;
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content: space-around;
+    display: flex;
+    }
+
+h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    justify-content: space-around;
+    display: flex;
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    justify-content: space-around;
+    display: flex;
+}
+
+footer{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    margin-top:50px;
+    width:100%;
+    height:30px;
+    background-color:red;
+    justify-content: space-around;
+    display: flex;
+
+    }
+
+.productos a{
+    text-decoration: none;
+    color: #f4f4f4;
+    justify-content: center;
+}
+
+.productos{
+    margin-top: 7%;
+    max-width: 80%;
+    padding-inline-start: 23%;
+    padding-inline-end: 20%;
+    margin-bottom: 20%;
+    transition: 1s;
+}
+
+.item {
+    margin-top: 10%;
+    margin-left: 5%;
+    justify-content: space-around;
+    display: flex;
+    display: inline-block;
+    font-size: inherit;
+    transition: all .5s ease;
+}
+.item:hover{
+    transition-duration: 0.1s;
+    transform: scale(1.5);
+}
+
+.item img{
+    border-radius: 60%;
+}
+

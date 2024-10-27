@@ -1,0 +1,31 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.caja{
+    padding: 3px 3px 3px 3px;
+    margin-bottom: 5px;
+}
+.comprar{
+    padding: 8px 8px 8px 8px;
+    background-color: rgb(54, 198, 255);
+    border-radius: 30%;
+    margin-bottom: 11%;
+}
+.comprar:hover{
+    background-color:brown;
+}
+img{
+    margin-top: 8%;
+    margin-left: 1%;
+    border-radius:100%;
+}

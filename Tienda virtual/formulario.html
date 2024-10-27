@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <!-- contenedor principal -->
+    <div class="form">
+        <img src="dpl.png" srcset="dpl.png 15x" alt="">
+        <div class="login">
+            <h2>Bienvenido!</h2>
+            <p>selecciona metodo de autenticacion</p>
+
+            <form action="">
+                <p>
+                    <!-- campo de usuario -->
+                    <label for="usuario">Usuario</label>
+                    <input class="t-input" type="text" name="usuario" id="usuario">
+                </p>
+
+                <p>
+                    <!-- campo de contraseña -->
+                    <label for="password">Contraseña</label>
+                    <input class="t-input" type="text" name="password" id="password">
+                </p>
+                <div class="opciones">
+                    <div>
+                        <!-- opcion de recordar -->
+                        Recuerdame<input type="checkbox" name="recuerdame" id="recuerdame">
+                    </div>
+                    <div>
+                        <!-- usuario olvido contraseña -->
+                        <a href="#">Olvide mi contraseña</a>
+                    </div>
+                </div>
+
+                <p>
+                    <!-- estilo base de los botones -->
+                    <input type="submit" class="btn btn-login" value="Entrar">
+                </p>
+                <div class="proveedores">
+                    <span>Elige otra opcion</span>
+                    <button class="btn btn-google">Google</button>
+                    <button class="btn btn-face">Facebook</button>
+                    <button class="btn btn-tw">Twitter</button>
+                    <button class="btn btn-insta">Instagram</button>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="welcome-screen"></div>
+        <!-- fin contenedor princiapl -->
+    </div>
+    
+</body>
+</html>

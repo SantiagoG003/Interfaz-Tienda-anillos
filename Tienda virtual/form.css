@@ -1,0 +1,203 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* centar el formulario */
+    height:100vh; 
+    background-color: brown;
+}
+
+.form{
+    background-color: aliceblue;
+    width: 80%;
+    border-radius: 15px;
+    /* previene que se dañe el diseño */
+    overflow: hidden;
+    height: 90%;
+    display: flex;
+    align-items: center;
+}
+.form img{
+    position: relative;
+    padding: 0%;
+    right: -1%;
+    top: -48.7%;
+    transform: rotate(-180deg);
+}
+.form .login{
+    /* se centra el login automaticamente */
+    width: 500px;
+    margin: 0 auto;
+}
+
+/* se utiliza el ">" para selecionar el inmediato */
+.form .login > h2{
+    /* alinear el texto en la mitad */
+    text-align: center;
+    font-size: 40px;
+}
+
+/* se utiliza el ">" para selecionar el inmediato */
+.form .login > p,
+.form .login > span{
+    /* alinear el texto en la mitad */
+    text-align: center;
+    color: #555;
+}
+
+/* estilizar los label */
+.form .login label{
+    display: block;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+/* afectara etiquetas input que tengan clase de tipo input */
+.form .login input.t-input{
+    display: block;
+    /* ocupa todo el ancho de la pantalla */
+    width: 100%;
+    /* evita el desbordamiento del elemento input */
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+
+/* cuando el input este seleccionado */
+.form .login input.t-input:focus{
+    outline: solid 2px rgb(41, 235, 160);
+    transition-duration: 0.5s;
+    transform: translateX(10px);
+}
+
+.form .login .opciones{
+    display: flex;
+    /* espacio de forma que quedan al lado */
+    justify-content: space-between;
+    /* alienar de forma vertical */
+    align-items: center;
+}
+
+.form a{
+    color: rgb(99, 20, 20);
+    text-decoration: none;
+}
+.form a:hover{
+    color: rgb(255, 61, 61);
+    text-decoration: underline;
+}
+
+.form .login .proveedores{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+/* sirve para todas las clases de tipo boton, mas generalizado, heredan todos los pertenecientes de esta clase todas las caracteristicas */
+.btn{
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: border;
+    display: block;
+    border-radius: 12px;
+    /* siempre el texto se va a mostrar en mayusculas */
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover{
+    transition-duration:0.3s;
+    transform: scale(1.05) ;
+}
+
+/* CARACTERISTICAS D ECADA ELEMENTO ESPECIFICO */
+
+/* BOTON DE LOGIN */
+.btn.btn-login{
+ background-color: black;
+ color: white;
+}
+.btn.btn-login:hover{
+    background-color: rgb(167, 255, 109);
+    color: black;
+    border: solid 1px #ccc;
+}
+
+/* BOTON DE GOOGLE */
+.btn.btn-google{
+    background-color:#ffffff;
+    color: rgb(0, 0, 0);
+    border: solid 1px #ccc;
+   }
+
+/* BOTON DE FACEBOOK */
+.btn.btn-face {
+    background-color: rgb(13, 13, 255);
+    color: rgb(255, 255, 255);
+}
+
+/* BOTON DE TWITTER */
+.btn.btn-tw{
+    background-color: #1da1f2;
+    color:white ;
+    }
+
+/* BOTON DE INSTAGRAM */
+.btn.btn-insta{
+    background:linear-gradient(90deg,rgba(133, 7, 150, 0.897),rgb(212, 0, 255),rgba(255, 145, 0, 0.822),yellow);
+    color : rgb(0, 0, 0);
+}
+.form .welcome-screen{
+    background-color: black;
+    height: 100%;
+    width: 50%;
+}
+
+@media screen and (max-width: 1390px) {
+    .form{
+        width: 95%;
+    }
+    .form .login{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .form .welcome-screen{
+        width: 37%;
+    }
+    
+}
+
+@media screen and (max-width: 815px) {
+    .form{
+        width: 95%;
+    }
+    .form .login{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .form .welcome-screen{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 388px) {
+    .form{
+        width: 95%;
+    }
+    .form .login{
+        width: 100px;
+        margin: 0 auto;
+    }
+    .form .welcome-screen{
+        display: none;
+    }
+    
+}
+
+
